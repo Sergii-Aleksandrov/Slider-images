@@ -1,0 +1,62 @@
+@keyframes turn{
+  from{transform: rotateX(-20deg) rotateY(0deg)}
+  to{transform: rotateX(-20deg) rotateY(-360deg)}
+}
+
+#base{margin: 100px auto;}
+
+  #wrapper{
+    width: 200px;
+    height: 200px;
+    margin: 0px 50%;
+
+    animation: turn 15s linear infinite;
+    transform-origin: left;
+    transform-style: preserve-3d;
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+}
+
+  #wrapper div{
+    width: 150px;
+    height: 150px;
+    box-shadow: 10px 10px 30px black;
+
+    position: absolute;
+  }
+  
+  .slider1{
+    top: 0px;
+    left: 0px;
+    transform: rotateY(90deg) translateX(50px);
+    transform-origin: left;
+    background: url(http://ironflex.com.ua/i/Builders/aly-garcia-480.jpeg);
+    background-size: cover; 
+  }
+  .slider2{
+    top: 0px;
+    left: -50px;
+    transform: rotateY(180deg);
+    transform-origin: left;
+    background: url(http://ironflex.com.ua/i/Builders/noemi-olah-473.jpeg);
+    background-size: cover; 
+  }
+  .slider3{
+    top: 0px;
+    left: 0px;
+    transform: rotateY(270deg) translateX(50px);
+    transform-origin: left;
+    background: url(http://ironflex.com.ua/i/Builders/anna-virmaioki-368.jpeg);
+    background-size: cover; 
+  }
+  .slider4{
+    top: 0px;
+    left: 50px;
+    transform: rotateY(0deg);
+    transform-origin: left;
+    background: url(http://www.trimmedandtoned.com/wp-content/uploads/2013/01/Anna-Virmajoki-Fitness-Model.jpg);
+    background-size: cover; 
+  }
